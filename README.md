@@ -1,4 +1,4 @@
-# cmd+
+# autocmd
 
 A shell-preserving terminal wrapper built with Rust with inline ghost completion for Windows shells, both Command Prompt and PowerShell.
 
