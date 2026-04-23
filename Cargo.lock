@@ -18,20 +18,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7f202df86484c868dbad7eaa557ef785d5c66295e41b460ef922eca0723b842c"
 
 [[package]]
-name = "syckmd"
-version = "0.1.0"
-dependencies = [
- "crossterm",
- "dotenvy",
- "regex",
- "reqwest",
- "serde",
- "serde_json",
- "unicode-width",
- "windows-sys 0.59.0",
-]
-
-[[package]]
 name = "base64"
 version = "0.21.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1044,6 +1030,20 @@ name = "stable_deref_trait"
 version = "1.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6ce2be8dc25455e1f91df71bfa12ad37d7af1092ae736f3a6cd0e37bc7810596"
+
+[[package]]
+name = "syckmd"
+version = "0.1.0"
+dependencies = [
+ "crossterm",
+ "dotenvy",
+ "regex",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "unicode-width",
+ "windows-sys 0.59.0",
+]
 
 [[package]]
 name = "syn"
