@@ -1,4 +1,4 @@
-# autocmd
+# syckmd
 
 A shell-preserving terminal wrapper with inline ghost completion for Windows shells, both Command Prompt and PowerShell.
 
@@ -12,14 +12,14 @@ A shell-preserving terminal wrapper with inline ghost completion for Windows she
 ## Run
 
 1. Build: `cargo build`
-2. Start: `cargo run` or `autocmd`
-3. Exit: `autocmd --exit`
+2. Start: `cargo run` or `syckmd`
+3. Exit: `syckmd --exit`
 
 ## Configuration
 
 Configuration can be done via environment variables.
 
-- `AUTOCMD_MAX_SUGGESTIONS` (10): Maximum number of suggestions to display.
+- `SYCKMD_MAX_SUGGESTIONS` (10): Maximum number of suggestions to display.
 
 ## Requirements
 

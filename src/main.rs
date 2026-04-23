@@ -314,7 +314,7 @@ fn load_console_history_for(exe: &str) -> Vec<String> {
 fn load_cmd_history() -> Vec<String> {
     let mut seen = HashSet::new();
     let mut merged = Vec::new();
-    ["cmd.exe", "autocmd.exe", "promptplus.exe"]
+    ["cmd.exe", "syckmd.exe", "promptplus.exe"]
         .into_iter()
         .flat_map(load_console_history_for)
         .for_each(|entry| {
@@ -824,7 +824,7 @@ fn is_exit_command(command: &str) -> bool {
     matches!(
         (parts.next(), parts.next(), parts.next()),
         (Some(name), Some(flag), None)
-            if name.eq_ignore_ascii_case("autocmd") && flag.eq_ignore_ascii_case("--exit")
+            if name.eq_ignore_ascii_case("syckmd") && flag.eq_ignore_ascii_case("--exit")
     )
 }
 
@@ -1263,7 +1263,7 @@ fn run_shell(config: &AppConfig) -> io::Result<()> {
 
 fn main() {
     let _ = dotenvy::dotenv();
-    let max_suggestions = env::var("AUTOCMD_MAX_SUGGESTIONS")
+    let max_suggestions = env::var("SYCKMD_MAX_SUGGESTIONS")
         .ok()
         .and_then(|value| value.parse::<usize>().ok())
         .map(|value| value.clamp(1, 50))
