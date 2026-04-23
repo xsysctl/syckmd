@@ -2,6 +2,8 @@
 
 A shell-preserving terminal wrapper with inline ghost completion for Windows shells, both Command Prompt and PowerShell.
 
+https://github.com/user-attachments/assets/35a5f8c7-44f3-4fda-917f-926528324b47
+
 ## Usage
 
 - `Tab` accepts full suggestion.
